@@ -1,0 +1,21 @@
+server:
+  port: 43961
+  tomcat:
+    accept-count: 5000
+    max-threads: 256
+    min-spare-threads: 32
+
+spring:
+  mvc:
+    async:
+      request-timeout: 500
+
+servlet:
+  context-path: /api
+
+system:
+  nodeStr: '[@GLOBAL_WBBCOCCNODE_SEALER_IP_RPCPORT_LIST]'
+
+logging:
+  config: config/logback-spring.xml
+
